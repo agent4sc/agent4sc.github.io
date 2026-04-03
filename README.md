@@ -57,21 +57,3 @@ Half-day workshop (9:00–12:30):
 - 90-minute interactive panel discussion
 
 **Invited Panelists (tentative):** Ian Foster (ANL/UChicago), Prasanna Balaprakash (Prima Labs), Soumyendu Sarkar (HPE), Rosa Filgueira (University of St Andrews), Logan Ward (NVIDIA)
-
-## Website Structure
-
-```
-index.html          # Main single-page site
-assets/
-  css/style.css     # All styles (dark theme)
-  js/main.js        # Navbar scroll, mobile menu, active link tracking
-```
-
-## Development
-
-Open `index.html` directly in a browser, or serve locally:
-
-```bash
-python3 -m http.server 8080
-# then open http://localhost:8080
-```
