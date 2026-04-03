@@ -3,17 +3,17 @@
    ========================================= */
 
 :root {
-  --primary: #1a3a5c;
+  --primary: #e8e8e8;
   --accent: #e05a1e;
   --accent-light: #f07840;
-  --light-bg: #f4f7fb;
-  --border: #dde4ed;
-  --text: #1e2d3d;
-  --text-muted: #5a6a7a;
-  --white: #ffffff;
+  --light-bg: #111111;
+  --border: #2a2a2a;
+  --text: #d0d0d0;
+  --text-muted: #7a7a7a;
+  --white: #161616;
   --section-pad: 80px 0;
   --radius: 8px;
-  --shadow: 0 4px 20px rgba(26, 58, 92, 0.10);
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
   --transition: 0.25s ease;
 }
 
@@ -718,7 +718,58 @@ footer .copy { margin-top: 16px; font-size: 0.78rem; }
   .hero-meta { gap: 20px; }
   .paper-formats { flex-direction: column; }
   .venue-banner { padding: 32px 20px; }
-  .nav-links { display: none; flex-direction: column; position: absolute; top: 60px; left: 0; right: 0; background: #1a3a5c; padding: 16px 24px; gap: 12px; }
+  .nav-links { display: none; flex-direction: column; position: absolute; top: 60px; left: 0; right: 0; background: #0a0a0a; padding: 16px 24px; gap: 12px; }
   .nav-links.open { display: flex; }
   .nav-toggle { display: flex; }
 }
+
+/* =========================================
+   DARK THEME OVERRIDES
+   ========================================= */
+
+/* Body & global */
+body { background: #0a0a0a; }
+
+/* Navbar */
+#navbar { background: rgba(8, 8, 8, 0.97); }
+.nav-logo { color: #f0f0f0; }
+.nav-toggle span { background: #f0f0f0; }
+
+/* Hero — make it truly dark */
+#hero { background: linear-gradient(135deg, #050505 0%, #0d0d0d 55%, #131313 100%); }
+.hero-meta-item .value { color: #ffffff; }
+
+/* Buttons — ensure readable text on dark surfaces */
+.btn-primary { color: #ffffff; }
+.btn-outline { color: #e0e0e0; border-color: rgba(255, 255, 255, 0.3); }
+.btn-outline:hover { color: #ffffff; border-color: #ffffff; background: rgba(255, 255, 255, 0.06); }
+
+/* Avatars */
+.person-avatar { background: linear-gradient(135deg, #2a2a2a, #3d3d3d); color: #ffffff; }
+
+/* Timeline sidebar */
+.timeline-card { background: #131313; border: 1px solid #2a2a2a; color: #d0d0d0; }
+.timeline-card h3 { color: #f0f0f0; }
+.timeline-cta { color: #ffffff !important; }
+
+/* Schedule table */
+.schedule-table th { background: #1a1a1a; color: #d0d0d0; }
+.badge-paper { background: #1a2535; color: #7aaace; }
+.badge-panel { background: #2a1a0e; color: #e09060; }
+.badge-break { background: #0d2014; color: #60a870; }
+
+/* Role badge on person cards */
+.person-card .role-badge { background: #252525; color: #b0b0b0; }
+
+/* Venue banner */
+.venue-banner {
+  background: linear-gradient(135deg, #0d0d0d, #181818);
+  border: 1px solid #2a2a2a;
+  color: #e8e8e8;
+}
+.venue-detail .vd-val { color: #f0f0f0; }
+.venue-banner p { color: rgba(255, 255, 255, 0.65); }
+
+/* Footer */
+footer { background: #050505; }
+footer .footer-logo { color: #f0f0f0; }
