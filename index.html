@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AGENT4SC 2026 — 1st Workshop on Agentic AI for Large-scale Science</title>
+  <meta name="description" content="AGENT4SC: 1st Workshop on Agentic AI for Large-scale Science, co-located with IEEE eScience 2026. Focusing on autonomous AI systems for HPC, cloud, and edge scientific research." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo"><span>AGENT4SC</span> 2026</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#topics">Topics</a></li>
+        <li><a href="#cfp">Call for Papers</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#people">Organizers</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-badge">IEEE eScience 2026 Workshop</div>
+      <h1>
+        <span class="highlight">AGENT4SC</span><br />
+        1st Workshop on Agentic AI<br />for Large-scale Science
+      </h1>
+      <p class="subtitle">
+        Advancing autonomous, trustworthy, and reproducible AI agents across
+        the edge–cloud–HPC continuum for scientific discovery at scale.
+      </p>
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <span class="label">Venue</span>
+          <span class="value">IEEE eScience 2026</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="label">Format</span>
+          <span class="value">Half-Day Workshop</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="label">Papers Due</span>
+          <span class="value">July 13, 2026</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="label">Submission</span>
+          <span class="value">EasyChair</span>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a href="#cfp" class="btn btn-primary">Submit a Paper</a>
+        <a href="#about" class="btn btn-outline">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Overview</span>
+        <h2>Why Agentic AI for Large-scale Science?</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Agentic AI is rapidly moving from "chat with tools" prototypes to autonomous systems that can reason, plan, coordinate, and act across complex digital research ecosystems. For the eScience community, this shift represents the emergence of a new <strong>control plane</strong> for computational and data-driven research.
+          </p>
+          <p>
+            Agents can request allocations, launch ensembles, steer workflows, move PB-scale datasets, trigger experiment/compute co-scheduling, and generate decisions that impact scientific validity — spanning the computing continuum from instruments and autonomous laboratories to simulations, data centers, cloud systems, and leadership-class HPC.
+          </p>
+          <p>
+            Recent closed-loop campaigns have revealed gaps in hallucination detection and mitigation, scheduling visibility, energy accounting, and reproducibility guarantees. At scale, even minor errors or blind spots can escalate into megawatt-hour waste, irreproducibility, and compromised scientific validity.
+          </p>
+          <p>
+            AGENT4SC provides a dedicated forum to advance <strong>scalable architectures, cross-continuum coordination, evaluation frameworks, verification and mitigation strategies, provenance, and observability mechanisms</strong> before agentic systems become embedded in production research workflows.
+          </p>
+        </div>
+        <div class="about-highlights">
+          <div class="highlight-card">
+            <h4>New Control Plane for Science</h4>
+            <p>Agents reshaping how researchers generate, validate, share, and reuse data and knowledge across distributed infrastructures.</p>
+          </div>
+          <div class="highlight-card">
+            <h4>Operational Urgency</h4>
+            <p>How to bound agent actions, ensure auditability, define safety controls, and support human-in-the-loop oversight for long autonomous campaigns.</p>
+          </div>
+          <div class="highlight-card">
+            <h4>Integrated Data Infrastructures</h4>
+            <p>Scalable databases, vector stores, caching layers, provenance services, and knowledge graphs — performant and auditable under high concurrency.</p>
+          </div>
+          <div class="highlight-card">
+            <h4>Recurring Venue</h4>
+            <p>AGENT4SC is intended to evolve into a recurring forum aligned with eScience's mission and the rapidly growing agentic AI community.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TOPICS ========== -->
+  <section id="topics">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Scope</span>
+        <h2>Key Topics</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="topics-grid">
+        <div class="topic-card">
+          <div class="topic-icon">🏗️</div>
+          <h4>System Architectures &amp; Design Principles</h4>
+          <p>Data and execution models and design principles for agentic AI beyond LLMs at scale.</p>
+        </div>
+        <div class="topic-card">
+          <div class="topic-icon">🌐</div>
+          <h4>Edge–Cloud–HPC Continuum</h4>
+          <p>Agentic AI for cross-facility science spanning instruments, simulations, and learning across distributed infrastructure.</p>
+        </div>
+        <div class="topic-card">
+          <div class="topic-icon">🧠</div>
+          <h4>Agent Memory &amp; Long-Horizon Reasoning</h4>
+          <p>Planning and reasoning under extreme compute and data constraints for sustained scientific campaigns.</p>
+        </div>
+        <div class="topic-card">
+          <div class="topic-icon">🗄️</div>
+          <h4>Data &amp; Metadata Architectures</h4>
+          <p>Databases, vector stores, caching layers, and knowledge graphs designed for agentic systems at scale.</p>
+        </div>
+        <div class="topic-card">
+          <div class="topic-icon">👤</div>
+          <h4>Human-in-the-Loop &amp; Oversight</h4>
+          <p>Approval policies and escalation paths for long agentic workflow runs requiring steering and oversight.</p>
+        </div>
+        <div class="topic-card">
+          <div class="topic-icon">🔍</div>
+          <h4>Provenance &amp; Observability</h4>
+          <p>Auditability, reproducibility, monitoring, tracking, debugging, and observability of agentic systems at scale.</p>
+        </div>
+        <div class="topic-card">
+          <div class="topic-icon">🛡️</div>
+          <h4>Safety, Security &amp; Accountability</h4>
+          <p>Reliability and accountability mechanisms for agentic workflows operating in production scientific environments.</p>
+        </div>
+        <div class="topic-card">
+          <div class="topic-icon">⚠️</div>
+          <h4>Hallucination Detection &amp; Recovery</h4>
+          <p>Verification, failure detection, mitigation, and recovery techniques for large-scale agent-driven systems.</p>
+        </div>
+        <div class="topic-card">
+          <div class="topic-icon">📊</div>
+          <h4>Performance Modeling</h4>
+          <p>Performance analysis and modeling for agentic systems under realistic scientific workloads.</p>
+        </div>
+        <div class="topic-card">
+          <div class="topic-icon">🔗</div>
+          <h4>Interoperability &amp; Standardization</h4>
+          <p>Interfaces, schemas, protocols, frameworks, and execution models for cross-platform agent coordination.</p>
+        </div>
+        <div class="topic-card">
+          <div class="topic-icon">📅</div>
+          <h4>Cross-Platform Scheduling</h4>
+          <p>Allocation and resource awareness under agent-driven control across heterogeneous systems.</p>
+        </div>
+        <div class="topic-card">
+          <div class="topic-icon">🚀</div>
+          <h4>Real-World Experience Reports</h4>
+          <p>Lessons from large-scale scientific deployments of agentic systems in production environments.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CALL FOR PAPERS ========== -->
+  <section id="cfp">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Submissions</span>
+        <h2>Call for Papers</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="cfp-layout">
+        <div class="cfp-content">
+          <p>
+            AGENT4SC invites original research papers, position papers, and experience reports on the systems foundations required to operationalize agentic AI in large-scale scientific environments. We encourage submissions from academia, national laboratories, industry, and operational HPC centers.
+          </p>
+
+          <h3>Paper Formats</h3>
+          <div class="paper-formats">
+            <div class="format-card">
+              <div class="pages">4</div>
+              <div class="type">Short Paper</div>
+              <div class="desc">Work-in-progress<br />not including references</div>
+            </div>
+            <div class="format-card">
+              <div class="pages">8</div>
+              <div class="type">Full Paper</div>
+              <div class="desc">Complete research<br />not including references</div>
+            </div>
+          </div>
+
+          <h3>Topics of Interest</h3>
+          <p>We welcome contributions on any of the <a href="#topics">key topics listed above</a>, including but not limited to:</p>
+          <ul>
+            <li>Novel architectures for autonomous agents operating across distributed scientific infrastructure</li>
+            <li>Systems integration of agents with HPC schedulers, data services, and experiment instruments</li>
+            <li>Provenance, observability, and auditability for agent-driven scientific campaigns</li>
+            <li>Safety, hallucination mitigation, and failure recovery mechanisms at scale</li>
+            <li>Human-in-the-loop and oversight frameworks for long autonomous workflows</li>
+            <li>Experience reports from real deployments, including lessons learned and operational gaps</li>
+          </ul>
+
+          <h3>Submission Guidelines</h3>
+          <ul>
+            <li>Papers must be written in English and formatted according to IEEE eScience 2026 author guidelines</li>
+            <li>All papers will receive at least three peer reviews from the Program Committee</li>
+            <li>Accepted papers will be published in the official eScience 2026 workshop proceedings</li>
+            <li>Authors are encouraged to include reproducibility information about relevant software, data artifacts, and AI assistants used</li>
+          </ul>
+
+          <h3>Submission System</h3>
+          <p>
+            Papers must be submitted through <strong>EasyChair</strong>. The submission link will be available closer to the submission deadline.
+          </p>
+        </div>
+
+        <!-- Timeline sidebar -->
+        <div>
+          <div class="timeline-card">
+            <h3>Important Dates</h3>
+            <div class="timeline-item">
+              <span class="event">Papers Due</span>
+              <span class="date">July 13, 2026</span>
+            </div>
+            <div class="timeline-item">
+              <span class="event">Notification of Acceptance</span>
+              <span class="date">August 3, 2026</span>
+            </div>
+            <div class="timeline-item">
+              <span class="event">Camera-Ready Papers</span>
+              <span class="date">August 10, 2026</span>
+            </div>
+            <div class="timeline-item">
+              <span class="event">Workshop</span>
+              <span class="date">IEEE eScience 2026</span>
+            </div>
+            <a href="#" class="timeline-cta">Submit via EasyChair →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SCHEDULE ========== -->
+  <section id="schedule">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Program</span>
+        <h2>Tentative Schedule</h2>
+        <div class="divider"></div>
+      </div>
+      <table class="schedule-table">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Activity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="time-cell">9:00 – 9:15</td>
+            <td>
+              Opening &amp; Welcome Remarks
+              <span class="type-badge badge-paper">Opening</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="time-cell">9:15 – 9:30</td>
+            <td>
+              Paper Presentation 1
+              <span class="type-badge badge-paper">Paper</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="time-cell">9:30 – 9:45</td>
+            <td>
+              Paper Presentation 2
+              <span class="type-badge badge-paper">Paper</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="time-cell">9:45 – 10:00</td>
+            <td>
+              Paper Presentation 3
+              <span class="type-badge badge-paper">Paper</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="time-cell">10:00 – 10:15</td>
+            <td>
+              Paper Presentation 4
+              <span class="type-badge badge-paper">Paper</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="time-cell">10:15 – 10:30</td>
+            <td>
+              Paper Presentation 5
+              <span class="type-badge badge-paper">Paper</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="time-cell">10:30 – 11:00</td>
+            <td>
+              Coffee Break
+              <span class="type-badge badge-break">Break</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="time-cell">11:00 – 12:30</td>
+            <td>
+              Interactive Panel Discussion
+              <span class="type-badge badge-panel">Panel</span>
+              <br />
+              <small style="color:#5a6a7a; font-size:0.8rem; display:block; margin-top:4px;">
+                Structured discussion from concrete scenarios (allocation requests, data movement spikes, unsafe tool invocation, hallucination risks) to actionable patterns (approval policies, escalation paths, safe shutdown, observability, audit trails). Audience participation encouraged.
+              </small>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ========== INVITED SPEAKERS / PANELISTS ========== -->
+  <section id="speakers">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Invited Panel</span>
+        <h2>Panelists</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="panelists-grid">
+        <div class="panelist-card">
+          <div class="panelist-avatar">IF</div>
+          <h4>Ian Foster</h4>
+          <div class="org">Argonne National Laboratory &amp; University of Chicago</div>
+        </div>
+        <div class="panelist-card">
+          <div class="panelist-avatar">PB</div>
+          <h4>Prasanna Balaprakash</h4>
+          <div class="org">Prima Labs</div>
+        </div>
+        <div class="panelist-card">
+          <div class="panelist-avatar">SS</div>
+          <h4>Soumyendu Sarkar</h4>
+          <div class="org">Hewlett Packard Enterprise</div>
+        </div>
+        <div class="panelist-card">
+          <div class="panelist-avatar">RF</div>
+          <h4>Rosa Filgueira</h4>
+          <div class="org">University of St Andrews</div>
+        </div>
+        <div class="panelist-card">
+          <div class="panelist-avatar">LW</div>
+          <h4>Logan Ward</h4>
+          <div class="org">NVIDIA</div>
+        </div>
+      </div>
+      <p class="tentative-note">* Panelist list is tentative and subject to confirmation.</p>
+    </div>
+  </section>
+
+  <!-- ========== PEOPLE ========== -->
+  <section id="people">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Team</span>
+        <h2>Organizers &amp; Committee</h2>
+        <div class="divider"></div>
+      </div>
+
+      <!-- Organizers -->
+      <div class="people-grid" style="grid-template-columns: repeat(2, 1fr); max-width: 780px; margin: 0 auto 56px;">
+        <div class="person-card">
+          <div class="person-avatar">AG</div>
+          <span class="role-badge">Co-Organizer</span>
+          <h4>Amal Gueroudji</h4>
+          <div class="affiliation">Argonne National Laboratory, USA</div>
+          <p>
+            Assistant Computer Scientist at ANL (MCS), focusing on data management for HPC+AI workflows and agentic AI systems, with emphasis on vector databases, provenance-aware architectures, and trustworthy, scalable data infrastructures across heterogeneous environments. Ph.D. from Université Grenoble Alpes.
+          </p>
+          <a class="email" href="mailto:agueroudji@anl.gov">agueroudji@anl.gov</a>
+        </div>
+        <div class="person-card">
+          <div class="person-avatar">RS</div>
+          <span class="role-badge">Co-Organizer</span>
+          <h4>Renan Souza</h4>
+          <div class="affiliation">Oak Ridge National Laboratory, USA</div>
+          <p>
+            Tech lead, senior software engineer and research scientist of intelligent data and AI platforms to accelerate scientific discovery. 15+ years of experience at IBM Research, ORNL, SLAC, and UFRJ. Focus on scalable, low-latency, observable, provenance- and metadata-first architectures. Author of 50+ papers and holder of 10+ USPTO patents.
+          </p>
+          <a class="email" href="mailto:souzar@ornl.gov">souzar@ornl.gov</a>
+        </div>
+      </div>
+
+      <!-- Steering Committee -->
+      <h3 class="subsection-title">Steering Committee</h3>
+      <div class="steering-grid">
+        <div class="steering-card">
+          <h4>Rosa Filgueira</h4>
+          <div class="affil">University of St Andrews, UK</div>
+        </div>
+        <div class="steering-card">
+          <h4>Rafael Ferreira da Silva</h4>
+          <div class="affil">Oak Ridge National Laboratory, USA</div>
+        </div>
+        <div class="steering-card">
+          <h4>Kyle Chard</h4>
+          <div class="affil">Argonne National Laboratory, USA</div>
+        </div>
+      </div>
+
+      <!-- Program Committee -->
+      <h3 class="subsection-title">Program Committee</h3>
+      <div class="pc-grid">
+        <div class="pc-item"><strong>Alok Kamatar</strong> — University of Chicago, USA</div>
+        <div class="pc-item"><strong>Paula Olaya</strong> — NVIDIA, USA</div>
+        <div class="pc-item"><strong>Amal Gueroudji</strong> — Argonne National Laboratory, USA</div>
+        <div class="pc-item"><strong>Raül Sirvent</strong> — Barcelona Supercomputing Center, Spain</div>
+        <div class="pc-item"><strong>Andrew E. Shao</strong> — Hewlett Packard Enterprise, USA</div>
+        <div class="pc-item"><strong>Renan Souza</strong> — Oak Ridge National Laboratory, USA</div>
+        <div class="pc-item"><strong>Daniel Balouek</strong> — Inria, France</div>
+        <div class="pc-item"><strong>Rosa Filgueira</strong> — Edinburgh Parallel Computing Centre, UK</div>
+        <div class="pc-item"><strong>Daniel de Oliveira</strong> — Fluminense Federal University, Brazil</div>
+        <div class="pc-item"><strong>Sandro Fiore</strong> — University of Trento, Italy</div>
+        <div class="pc-item"><strong>Daniel Garijo</strong> — Universidad Politécnica de Madrid, Spain</div>
+        <div class="pc-item"><strong>Seth Ockerman</strong> — University of Wisconsin, USA</div>
+        <div class="pc-item"><strong>Daniel Rosendo</strong> — Oak Ridge National Laboratory, USA</div>
+        <div class="pc-item"><strong>Silvina Caíno-Lores</strong> — Inria, France</div>
+        <div class="pc-item"><strong>Frédéric Suter</strong> — Oak Ridge National Laboratory, USA</div>
+        <div class="pc-item"><strong>Soumyendu Sarkar</strong> — Hewlett Packard Enterprise, USA</div>
+        <div class="pc-item"><strong>Haytham Fayek</strong> — RMIT University, Australia</div>
+        <div class="pc-item"><strong>Tainã Coleman</strong> — San Diego Supercomputing Center, USA</div>
+        <div class="pc-item"><strong>Jack Marquez</strong> — University of Tennessee, USA</div>
+        <div class="pc-item"><strong>Wes Brewer</strong> — Oak Ridge National Laboratory, USA</div>
+        <div class="pc-item"><strong>Logan Ward</strong> — NVIDIA, USA</div>
+        <div class="pc-item"><strong>William Godoy</strong> — Oak Ridge National Laboratory, USA</div>
+        <div class="pc-item"><strong>Loïc Pottier</strong> — Lawrence Livermore National Laboratory, USA</div>
+        <div class="pc-item"><strong>Woong Shin</strong> — Oak Ridge National Laboratory, USA</div>
+        <div class="pc-item"><strong>Matthieu Dorier</strong> — Argonne National Laboratory, USA</div>
+        <div class="pc-item"><strong>Yogesh Simmhan</strong> — Indian Institute of Science, India</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== VENUE ========== -->
+  <section id="venue">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Location</span>
+        <h2>Workshop Venue</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="venue-banner">
+        <h3>Co-located with IEEE eScience 2026</h3>
+        <p>
+          AGENT4SC is a workshop at the IEEE International Conference on e-Science, the premier forum for data-intensive and compute-intensive research across the full scientific lifecycle.
+        </p>
+        <div class="venue-details">
+          <div class="venue-detail">
+            <span class="vd-label">Duration</span>
+            <span class="vd-val">Half Day</span>
+          </div>
+          <div class="venue-detail">
+            <span class="vd-label">Expected Attendance</span>
+            <span class="vd-val">20 – 40</span>
+          </div>
+          <div class="venue-detail">
+            <span class="vd-label">Website</span>
+            <span class="vd-val">agent4sc.github.io</span>
+          </div>
+          <div class="venue-detail">
+            <span class="vd-label">Submission System</span>
+            <span class="vd-val">EasyChair</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="container">
+      <div class="footer-logo">AGENT4SC 2026</div>
+      <p>1st Workshop on Agentic AI for Large-scale Science</p>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#topics">Topics</a>
+        <a href="#cfp">Call for Papers</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#speakers">Panelists</a>
+        <a href="#people">Organizers</a>
+      </div>
+      <p class="copy">
+        Co-located with IEEE eScience 2026 &nbsp;|&nbsp;
+        Contact: <a href="mailto:agueroudji@anl.gov">agueroudji@anl.gov</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
