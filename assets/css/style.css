@@ -735,21 +735,27 @@ body { background: #0a0a0a; }
 .nav-logo { color: #f0f0f0; }
 .nav-toggle span { background: #f0f0f0; }
 
-/* Hero — make it truly dark */
-#hero { background: linear-gradient(135deg, #050505 0%, #0d0d0d 55%, #131313 100%); }
+/* Hero — dark background, white text throughout */
+#hero { background: linear-gradient(135deg, #050505 0%, #0d0d0d 55%, #131313 100%); color: #ffffff; }
+#hero h1 { color: #ffffff; }
+#hero .subtitle { color: rgba(255, 255, 255, 0.7); }
 .hero-meta-item .value { color: #ffffff; }
+.hero-meta-item .label { color: rgba(255, 255, 255, 0.45); }
 
-/* Buttons — ensure readable text on dark surfaces */
+/* Buttons */
 .btn-primary { color: #ffffff; }
+.btn-primary:hover { color: #ffffff; }
 .btn-outline { color: #e0e0e0; border-color: rgba(255, 255, 255, 0.3); }
 .btn-outline:hover { color: #ffffff; border-color: #ffffff; background: rgba(255, 255, 255, 0.06); }
 
 /* Avatars */
 .person-avatar { background: linear-gradient(135deg, #2a2a2a, #3d3d3d); color: #ffffff; }
+.panelist-avatar { color: #ffffff; }
 
 /* Timeline sidebar */
 .timeline-card { background: #131313; border: 1px solid #2a2a2a; color: #d0d0d0; }
 .timeline-card h3 { color: #f0f0f0; }
+.timeline-item .event { color: rgba(255, 255, 255, 0.5); }
 .timeline-cta { color: #ffffff !important; }
 
 /* Schedule table */
@@ -761,14 +767,16 @@ body { background: #0a0a0a; }
 /* Role badge on person cards */
 .person-card .role-badge { background: #252525; color: #b0b0b0; }
 
-/* Venue banner */
+/* Venue banner — dark card with visible text */
 .venue-banner {
   background: linear-gradient(135deg, #0d0d0d, #181818);
   border: 1px solid #2a2a2a;
   color: #e8e8e8;
 }
+.venue-banner h3 { color: #f0f0f0; }
+.venue-banner p { color: rgba(255, 255, 255, 0.6); }
+.venue-detail .vd-label { color: rgba(255, 255, 255, 0.4); }
 .venue-detail .vd-val { color: #f0f0f0; }
-.venue-banner p { color: rgba(255, 255, 255, 0.65); }
 
 /* Footer */
 footer { background: #050505; }
