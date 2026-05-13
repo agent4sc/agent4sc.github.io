@@ -55,5 +55,3 @@ Half-day workshop (9:00–12:30):
 - Five 15-minute paper presentations
 - 30-minute coffee break
 - 90-minute interactive panel discussion
-
-**Invited Panelists (tentative):** Ian Foster (ANL/UChicago), Prasanna Balaprakash (Prima Labs), Soumyendu Sarkar (HPE), Rosa Filgueira (University of St Andrews), Logan Ward (NVIDIA)
