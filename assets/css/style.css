@@ -82,6 +82,12 @@ img { max-width: 100%; }
 }
 .nav-links a:hover { color: var(--accent-light); }
 
+.nav-submit {
+  font-size: 0.82rem;
+  padding: 7px 16px;
+  white-space: nowrap;
+}
+
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -113,6 +119,7 @@ img { max-width: 100%; }
   content: '';
   position: absolute;
   inset: 0;
+  pointer-events: none;
   background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
@@ -569,7 +576,7 @@ section:nth-of-type(even) { background: var(--light-bg); }
 }
 .steering-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
   margin-bottom: 48px;
 }
@@ -579,6 +586,7 @@ section:nth-of-type(even) { background: var(--light-bg); }
   border-radius: var(--radius);
   padding: 18px 20px;
   box-shadow: var(--shadow);
+  text-align: center;
 }
 .steering-card h4 {
   font-size: 0.92rem;
@@ -589,6 +597,13 @@ section:nth-of-type(even) { background: var(--light-bg); }
 .steering-card .affil {
   font-size: 0.78rem;
   color: var(--text-muted);
+}
+.steering-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 12px;
 }
 
 .pc-grid {
@@ -610,7 +625,7 @@ section:nth-of-type(even) { background: var(--light-bg); }
 /* ---- PANELISTS ---- */
 .panelists-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 .panelist-card {
@@ -638,6 +653,7 @@ section:nth-of-type(even) { background: var(--light-bg); }
 }
 .panelist-card h4 { font-size: 0.9rem; font-weight: 700; color: var(--primary); margin-bottom: 4px; }
 .panelist-card .org { font-size: 0.76rem; color: var(--text-muted); }
+.panelist-bio { font-size: 0.78rem; color: var(--text-muted); margin-top: 10px; line-height: 1.5; text-align: left; }
 .tentative-note {
   text-align: center;
   font-size: 0.82rem;
@@ -721,6 +737,7 @@ footer .copy { margin-top: 16px; font-size: 0.78rem; }
   .nav-links { display: none; flex-direction: column; position: absolute; top: 60px; left: 0; right: 0; background: #0a0a0a; padding: 16px 24px; gap: 12px; }
   .nav-links.open { display: flex; }
   .nav-toggle { display: flex; }
+  .nav-submit { display: none; }
 }
 
 /* =========================================
@@ -749,8 +766,11 @@ body { background: #0a0a0a; }
 .btn-outline:hover { color: #ffffff; border-color: #ffffff; background: rgba(255, 255, 255, 0.06); }
 
 /* Avatars */
-.person-avatar { background: linear-gradient(135deg, #2a2a2a, #3d3d3d); color: #ffffff; }
-.panelist-avatar { color: #ffffff; }
+.person-avatar { background: linear-gradient(135deg, #2a2a2a, #3d3d3d); color: #ffffff; overflow: hidden; }
+.panelist-avatar { color: #ffffff; overflow: hidden; }
+.person-avatar img,
+.panelist-avatar img,
+.steering-avatar img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; display: block; }
 
 /* Timeline sidebar */
 .timeline-card { background: #131313; border: 1px solid #2a2a2a; color: #d0d0d0; }
