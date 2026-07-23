@@ -625,7 +625,7 @@ section:nth-of-type(even) { background: var(--light-bg); }
 /* ---- PANELISTS ---- */
 .panelists-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 .panelist-card {
@@ -722,7 +722,7 @@ footer .copy { margin-top: 16px; font-size: 0.78rem; }
   .topics-grid { grid-template-columns: repeat(2, 1fr); }
   .people-grid { grid-template-columns: repeat(2, 1fr); }
   .steering-grid { grid-template-columns: repeat(2, 1fr); }
-  .panelists-grid { grid-template-columns: repeat(3, 1fr); }
+  .panelists-grid { grid-template-columns: repeat(2, 1fr); }
   .cfp-layout .timeline-card { position: static; }
 }
 
