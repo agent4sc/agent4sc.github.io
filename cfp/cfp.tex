@@ -12,17 +12,19 @@
 \usepackage{mdframed}
 \usepackage{tabularx}
 \usepackage{booktabs}
-\usepackage{tikz}
+\usepackage{graphicx}
 \usepackage{url}
 \usepackage{hyperref}
 \usepackage{array}
 
 % ---- Colors ---------------------------------------------------------------
-\definecolor{navyblue}{HTML}{1a3a5c}
-\definecolor{accent}{HTML}{e05a1e}
-\definecolor{accentlight}{HTML}{f07840}
-\definecolor{lightgray}{HTML}{f5f5f5}
+\definecolor{navyblue}{HTML}{1a3a8c}
+\definecolor{accent}{HTML}{7c3aed}
+\definecolor{accentlight}{HTML}{a855f7}
+\definecolor{darkpurple}{HTML}{4c1d95}
+\definecolor{lightlavender}{HTML}{ede9fe}
 \definecolor{midgray}{HTML}{444444}
+\definecolor{ruleblue}{HTML}{a0aece}
 
 % ---- Hyperref --------------------------------------------------------------
 \hypersetup{
@@ -35,31 +37,16 @@
 
 \setlength{\parskip}{5pt}
 \setlength{\parindent}{0pt}
-\newcommand{\ThinRule}{\noindent\textcolor{navyblue!40}{\rule{\linewidth}{0.5pt}}}
+\newcommand{\ThinRule}{\noindent{\color{ruleblue}\rule{\linewidth}{0.5pt}}}
 
 % ---------------------------------------------------------------------------
 \begin{document}
 \pagestyle{empty}
 
 % ============================================================
-%  HEADER BLOCK
+%  BANNER
 % ============================================================
-\begin{tikzpicture}[remember picture, overlay]
-  \fill[navyblue] (current page.north west) rectangle +(\paperwidth, -3.8cm);
-\end{tikzpicture}
-
-\vspace{-0.5cm}
-\begin{center}
-  {\fontsize{8}{10}\selectfont\color{accentlight}%
-    \textbf{IEEE eSCIENCE 2026 WORKSHOP}}\\[5pt]
-  {\fontsize{36}{40}\selectfont\color{white}\textbf{AGENT4SC}\,%
-    \textcolor{accentlight}{2026}}\\[5pt]
-  {\fontsize{13}{16}\selectfont\color{white!85}%
-    1st Workshop on Agentic AI for Large-scale Science}\\[6pt]
-  {\fontsize{9}{11}\selectfont\color{white!55}%
-    Autonomous\enspace$\cdot$\enspace Trustworthy\enspace$\cdot$\enspace
-    Reproducible\enspace$\cdot$\enspace Cross-Continuum}
-\end{center}
+\noindent\includegraphics[width=\linewidth]{banner_amal.png}
 
 \vspace{0.45cm}
 
@@ -67,7 +54,7 @@
 %  IMPORTANT DATES  (colored box)
 % ============================================================
 \begin{mdframed}[
-  backgroundcolor=lightgray,
+  backgroundcolor=lightlavender,
   linecolor=accent,
   linewidth=1.5pt,
   leftmargin=0pt, rightmargin=0pt,
@@ -99,17 +86,14 @@
 \vspace{0.4cm}
 
 % ============================================================
-%  TWO COLUMNS
+%  ABOUT
 % ============================================================
-\begin{multicols}{2}
-
-% ---- ABOUT ----------------------------------------------------------------
 {\color{navyblue}\large\textbf{About AGENT4SC}}
 \ThinRule\vspace{4pt}
 
 Agentic AI is rapidly moving from ``chat with tools'' prototypes to autonomous
 systems that can reason, plan, coordinate, and act across complex digital
-research ecosystems.  For the eScience community, this represents the emergence
+research ecosystems. For the eScience community, this represents the emergence
 of a new \textbf{control plane} for computational and data-driven research.
 
 Agents can request allocations, launch ensembles, steer workflows, move
@@ -123,13 +107,17 @@ architectures, cross-continuum coordination, evaluation frameworks, safety and
 verification strategies, provenance, and observability mechanisms} before
 agentic systems become embedded in production research workflows.
 
-\vspace{8pt}
+\vspace{10pt}
 
-% ---- TOPICS ---------------------------------------------------------------
+% ============================================================
+%  TOPICS
+% ============================================================
 {\color{navyblue}\large\textbf{Topics of Interest}}
 \ThinRule\vspace{4pt}
 
-\begin{itemize}[leftmargin=12pt, itemsep=1pt, topsep=2pt]
+We welcome contributions on, but not limited to:
+
+\begin{itemize}[leftmargin=16pt, itemsep=1pt, topsep=2pt]
   \item System architectures \& design principles for agentic AI at scale
   \item Agentic AI for the edge--cloud--HPC continuum
   \item Agent memory \& long-horizon reasoning under compute constraints
@@ -144,79 +132,72 @@ agentic systems become embedded in production research workflows.
   \item Real-world experience reports from large-scale deployments
 \end{itemize}
 
-\columnbreak
+\vspace{10pt}
 
-% ---- PAPER FORMATS --------------------------------------------------------
+% ============================================================
+%  PAPER FORMATS
+% ============================================================
 {\color{navyblue}\large\textbf{Paper Formats}}
 \ThinRule\vspace{4pt}
 
-\renewcommand{\arraystretch}{1.3}
-\begin{tabularx}{\columnwidth}{>{\centering\bfseries\color{accent}}p{1.8cm} X}
-  \toprule
-  Pages & Type \\
-  \midrule
-  4 & \textbf{Short Paper} --- work-in-progress
-      (\emph{not including references}) \\[3pt]
-  8 & \textbf{Full Paper} --- complete research
-      (\emph{not including references}) \\
-  \bottomrule
-\end{tabularx}
+\begin{itemize}[leftmargin=16pt, itemsep=3pt, topsep=2pt]
+  \item \textcolor{accent}{\textbf{4 pages}} --- \textbf{Short Paper}: work-in-progress (\emph{not including references})
+  \item \textcolor{accent}{\textbf{8 pages}} --- \textbf{Full Paper}: complete research (\emph{not including references})
+\end{itemize}
 
-\vspace{8pt}
+\vspace{10pt}
 
-% ---- SUBMISSION GUIDELINES ------------------------------------------------
+% ============================================================
+%  SUBMISSION GUIDELINES
+% ============================================================
 {\color{navyblue}\large\textbf{Submission Guidelines}}
 \ThinRule\vspace{4pt}
 
-\begin{itemize}[leftmargin=12pt, itemsep=1pt, topsep=2pt]
+\begin{itemize}[leftmargin=16pt, itemsep=1pt, topsep=2pt]
   \item Papers must be written in \textbf{English} and formatted per
-        \href{https://www.escience-conference.org/2026/}{IEEE eScience 2026
-        author guidelines}
-  \item All papers receive \textbf{at least three} peer reviews from the
-        Program Committee
-  \item Accepted papers published in the official \textbf{eScience 2026
-        workshop proceedings}
+        \href{https://www.escience-conference.org/2026/call-for-papers}{IEEE eScience 2026 author guidelines}
+  \item All papers receive \textbf{at least three} peer reviews from the Program Committee
+  \item Accepted papers published in the official \textbf{eScience 2026 workshop proceedings}
   \item Authors are encouraged to include reproducibility information about
         software, data artifacts, and AI assistants used
 \end{itemize}
 
-\vspace{8pt}
+\vspace{10pt}
 
-% ---- ORGANIZERS -----------------------------------------------------------
+% ============================================================
+%  ORGANIZERS & STEERING
+% ============================================================
 {\color{navyblue}\large\textbf{Organizers}}
-\ThinRule\vspace{4pt}
+\ThinRule\vspace{6pt}
 
-\textbf{Amal Gueroudji}\\
-{\small\textcolor{midgray}{Argonne National Laboratory, USA} \\
-\href{mailto:agueroudji@anl.gov}{agueroudji@anl.gov}}
+\begin{tabular}{ll}
+  \textbf{Amal Gueroudji} &
+    \textcolor{midgray}{Argonne National Laboratory, USA} \quad
+    \href{mailto:agueroudji@anl.gov}{agueroudji@anl.gov} \\[4pt]
+  \textbf{Renan Souza} &
+    \textcolor{midgray}{Oak Ridge National Laboratory, USA} \quad
+    \href{mailto:souzar@ornl.gov}{souzar@ornl.gov} \\
+\end{tabular}
 
-\vspace{5pt}
-\textbf{Renan Souza}\\
-{\small\textcolor{midgray}{Oak Ridge National Laboratory, USA} \\
-\href{mailto:souzar@ornl.gov}{souzar@ornl.gov}}
+\vspace{10pt}
 
-\vspace{8pt}
-
-% ---- STEERING COMMITTEE ---------------------------------------------------
 {\color{navyblue}\large\textbf{Steering Committee}}
 \ThinRule\vspace{4pt}
 
 {\small
-\begin{itemize}[leftmargin=12pt, itemsep=1pt, topsep=1pt]
-  \item Rosa Filgueira --- University of St Andrews, UK
-  \item Rafael Ferreira da Silva --- ORNL, USA
-  \item Kyle Chard --- Argonne National Laboratory, USA
-  \item Patrick Widener --- Oak Ridge National Laboratory, USA
-\end{itemize}
+\begin{tabular}{ll}
+  Rosa Filgueira      & University of St Andrews, UK \\[2pt]
+  Rafael Ferreira da Silva & Oak Ridge National Laboratory, USA \\[2pt]
+  Kyle Chard          & Argonne National Laboratory, USA \\[2pt]
+  Patrick Widener     & Oak Ridge National Laboratory, USA \\
+\end{tabular}
 }
-
-\end{multicols}
 
 % ============================================================
 %  FOOTER
 % ============================================================
 \vfill
-\noindent\textcolor{navyblue!30}{\rule{\linewidth}{0.5pt}}
+\noindent{\color{ruleblue}\rule{\linewidth}{0.5pt}}
 \vspace{4pt}
 \begin{center}
   {\small\textcolor{midgray}{%
